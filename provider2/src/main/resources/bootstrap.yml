@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: ${my-url}
+#        group: AIDEN
+#        namespace: cfe42ca9-a95c-42c0-972f-7a16de98d60f
+      discovery:
+        server-addr: ${my-url}
+#        group: AIDEN
+#        namespace: cfe42ca9-a95c-42c0-972f-7a16de98d60f
+  application:
+    name: provider
+
+server:
+  port: 8883
+
+
+my-url: 192.168.223.131:8848
+
