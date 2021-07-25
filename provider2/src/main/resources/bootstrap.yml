@@ -10,6 +10,12 @@ spring:
         server-addr: ${my-url}
 #        group: AIDEN
 #        namespace: cfe42ca9-a95c-42c0-972f-7a16de98d60f
+    sentinel:
+      transport:
+        dashboard: 192.168.223.131:8858
+        port: 8719
+      eager: true
+
   application:
     name: provider
 
