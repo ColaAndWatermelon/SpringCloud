@@ -16,7 +16,11 @@ spring:
         port: 8719
       eager: true
 
-#      关闭sentinel的CommonFilter实例化
+  #      关闭sentinel的CommonFilter实例化
+  #      1.此场景拦截不到BlockException,下边的方法貌似也不能
+  #      web-context-unify: false
+
+#      2.此方法需要配置引入CommonFilter，会导致其他问题，不建议
 #      filter:
 #        enabled: false
 
