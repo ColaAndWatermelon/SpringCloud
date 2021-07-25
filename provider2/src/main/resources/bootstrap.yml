@@ -16,6 +16,10 @@ spring:
         port: 8719
       eager: true
 
+#      关闭sentinel的CommonFilter实例化
+#      filter:
+#        enabled: false
+
   application:
     name: provider
 

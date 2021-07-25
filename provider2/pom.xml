@@ -18,6 +18,11 @@
     </properties>
     <dependencies>
 
+        <!--     关闭收敛   -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-web-servlet</artifactId>
+        </dependency>
 
     </dependencies>
 

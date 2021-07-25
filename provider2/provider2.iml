@@ -25,6 +25,8 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-web-servlet:1.7.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-core:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.2.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.2.10.RELEASE" level="project" />
@@ -134,7 +136,6 @@
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-transport-common:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-datasource-extension:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-annotation-aspectj:1.7.1" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba.csp:sentinel-core:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.6" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.6" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.cloud:spring-cloud-circuitbreaker-sentinel:2.2.1.RELEASE" level="project" />
