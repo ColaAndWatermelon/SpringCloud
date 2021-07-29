@@ -19,4 +19,18 @@ public class TestService {
         }
     }
 
+    @SentinelResource("test2")
+    public String returnByParam2(Integer param){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if (param == 1){
+            return "1";
+        }else {
+            return "2";
+        }
+    }
+
 }
