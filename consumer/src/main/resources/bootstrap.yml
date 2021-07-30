@@ -10,6 +10,8 @@ spring:
         server-addr: ${my-url}
 #        group: AIDEN
 #        namespace: cfe42ca9-a95c-42c0-972f-7a16de98d60f
+
+
   application:
     name: consumer
 
@@ -21,3 +23,7 @@ server:
 
 my-url: 192.168.223.131:8848
 
+
+feign:
+  sentinel:
+    enabled: true

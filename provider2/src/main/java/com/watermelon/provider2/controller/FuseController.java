@@ -1,6 +1,8 @@
 package com.watermelon.provider2.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,9 +20,9 @@ public class FuseController {
 
     /**
      * 满调用比例
-     * */
+     */
     @GetMapping("test1")
-    public String test1(){
+    public String test1() {
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
@@ -31,14 +33,23 @@ public class FuseController {
 
     /**
      * 异常比例
-     * */
+     */
     @GetMapping("test2")
-    public String test2(){
-         atomicInteger.getAndIncrement();
-         if (atomicInteger.get() % 2 ==0){
-             int i = 1/0;
-         }
-         return "test2";
+    public String test2() {
+        atomicInteger.getAndIncrement();
+        if (atomicInteger.get() % 2 == 0) {
+            int i = 1 / 0;
+        }
+        return "test2";
+    }
+
+    /**
+     * 测试热点参数限流
+     */
+    @GetMapping("test3/{id}")
+    @SentinelResource(value="test3Resource")
+    public String test3(@PathVariable("id") String id) {
+        return "get id is: " + id;
     }
 
 }
